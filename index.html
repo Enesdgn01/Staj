@@ -1,19 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sefik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-  <body>
-    <div>
-      <div>
-        <a href="https://enesdgn01.github.io/Staj/Gear/">Gear</a>
-        <a href="https://enesdgn01.github.io/Staj/HelloWorld/">HelloWorld</a>
-        <a href="https://enesdgn01.github.io/Staj/Radios/">Radios</a>
-        <a href="https://enesdgn01.github.io/Staj/Hit-Target/">Hit-Target</a>
-      </div>
+        .container {
+            text-align: center;
+            padding: 100px;
+            border: 2px solid #333;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .link-boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-box {
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+            border: 2px solid #333;
+            background-color: #fff;
+            color: #333;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .link-box:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Linkler</h1>
+        <div class="link-boxes">
+            <a href="https://enesdgn01.github.io/Staj/Gear/" class="link-box">Gear</a>
+            <a href="https://enesdgn01.github.io/Staj/HelloWorld" class="link-box">HelloWorld</a>
+            <a href="https://enesdgn01.github.io/Staj/Radios" class="link-box">Radios</a>
+            <a href="https://enesdgn01.github.io/Staj/Hit-Target" class="link-box">Hit-Target</a>
+        </div>
     </div>
-  </body>
+</body>
 </html>
