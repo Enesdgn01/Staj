@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 280px;
+            width: 280px;
+            background-color: white;
+        }
+        .target {
+            width: 200px;   
+            height: 200px;
+            background-color: rgb(177, 128, 99);
+            border-radius: 50%;
+            position: relative;
+        }
+        .target2 {
+            width: 150px;   
+            height: 150px;
+            border: 20px solid white;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 0 20px rgb(177, 128, 99);
+        }
+        .target3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Elemanı tam ortalamak için */
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%; 
+            background-color: white; 
+        }
+        .target4{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Elemanı tam ortalamak için */
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            background-color: rgb(177, 128, 99); 
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="target">
+            <div class="target2">
+                <div class="target3">
+                    <div class="target4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
