@@ -1,12 +1,12 @@
 body {
   height: 100vh;
   margin: 0;
-  background-color: black;
+  background-color: rgb(48, 64, 61);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.text-wrapper {
+.text-content {
   display: flex;
   position: relative;
   align-items: center;
@@ -18,12 +18,15 @@ body {
 .text1 {
   white-space: nowrap;
   animation: slide 3s linear infinite;
+  color: rgb(48, 64, 61);
 }
 .text2 {
   position: absolute;
   white-space: nowrap;
   animation: slide2 3s linear infinite;
   margin-left: -5px;
+  color: rgb(48, 64, 61);
+
 }
 @keyframes slide {
   0% {
