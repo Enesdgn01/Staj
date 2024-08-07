@@ -1,1 +1,1 @@
-https://enesdgn01.github.io/Hit-Target/
+https://enesdgn01.github.io/Staj/Hit-Target/

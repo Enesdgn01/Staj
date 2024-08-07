@@ -1,1 +1,1 @@
-https://enesdgn01.github.io/Gear/
+https://enesdgn01.github.io/Staj/Gear/

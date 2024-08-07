@@ -1,1 +1,1 @@
-https://enesdgn01.github.io/HelloWorld/
+https://enesdgn01.github.io/Staj/HelloWorld/
