@@ -1,31 +1,45 @@
 body {
+  height: 100vh;
   margin: 0;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
-.container {
+.text-wrapper {
   display: flex;
+  position: relative;
+  align-items: center;
+  font-size: 30px;
   width: 350px;
   height: 350px;
   background-color: white;
 }
-.marquee-text {
-  text-shadow: 12ch 0, 24ch 0;
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  width: inherit;
-  font-family: Monospace, sans-serif;
+.text1 {
+  white-space: nowrap;
+  animation: slide 3s linear infinite;
 }
-.marquee-text2 {
-  text-shadow: -12ch 0, -24ch 0;
-  font-size: 30px;
+.text2 {
   position: absolute;
-  top: 50%;
-  width: inherit;
-  font-family: Monospace, sans-serif;
+  white-space: nowrap;
+  animation: slide2 3s linear infinite;
+  margin-left: -5px;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
   }
-  
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes slide2 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
