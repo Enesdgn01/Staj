@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  background-color: white;
+}
+.marquee-text {
+  text-shadow: 12ch 0, 24ch 0;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  width: inherit;
+  font-family: Monospace, sans-serif;
+}
+.marquee-text2 {
+  text-shadow: -12ch 0, -24ch 0;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  width: inherit;
+  font-family: Monospace, sans-serif;
+  }
+  
