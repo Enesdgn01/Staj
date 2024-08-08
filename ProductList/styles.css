@@ -119,7 +119,9 @@ button svg {
   border-radius: 10px;
   background-color: white;
   padding: 50px;
-  height: fit-content;
+  display: sticky;
+  top: 18%;
+  height: 240px;
 }
 
 .cart-wrapper {
