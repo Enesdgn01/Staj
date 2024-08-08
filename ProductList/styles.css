@@ -94,9 +94,11 @@ button svg {
     right: 20px;
     display: block;
     width: 200px;
+    padding: 20px; 
+    height: fit-content;
+    z-index: 1000; 
   }
 }
-
 
 @media (max-width: 1499px) {
   .cart-container {
@@ -107,6 +109,7 @@ button svg {
     margin-top: 20px;
   }
 }
+
 
 .cart-container {
   border-radius: 10px;
