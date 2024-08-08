@@ -1,1 +1,0 @@
-https://enesdgn01.github.io/Staj/Product-List/
