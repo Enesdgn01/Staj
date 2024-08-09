@@ -18,17 +18,18 @@ body {
 }
 
 .main {
-  width: 90%;
   padding: 20px;
   box-sizing: border-box;
   max-width: 100%;
+  display: flex;
+  flex-direction: row; 
 }
 
 .content {
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
-  width: 80%;
   background-color: #fcf8f5;
 }
 
@@ -42,6 +43,7 @@ body {
   align-items: none;
   position: relative;
 }
+
 .contents {
   align-items: center;
 }
@@ -91,13 +93,22 @@ button svg {
   margin-right: 8px;
 }
 
+.cart-right {
+  position: relative;
+  width: 20%;
+  background-color: #fcf8f5;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+
 .cart-container {
+  position: sticky;
+  top: 40px;
   border-radius: 10px;
   background-color: white;
-  padding: 50px;
-  position: sticky;
-  top: 20%;
-  z-index: 1000;
+  padding: 30px;
+  height: auto; 
 }
 
 .cart-wrapper {
@@ -105,7 +116,7 @@ button svg {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .cart-image-with-text {
@@ -114,17 +125,7 @@ button svg {
   justify-content: center;
   align-items: center;
 }
-.cart-right {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 20%; 
-  height: 100%;
-  padding: 20px; 
-  background-color: #fcf8f5;
-  border-radius: 10px; 
-  z-index: 1000; 
-}
+
 
 @media (max-width: 768px) {
   .cart-right {
