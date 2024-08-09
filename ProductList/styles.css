@@ -1,13 +1,13 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #FCF8F5;
+  background-color: #fcf8f5;
 }
 
 .header {
   position: relative;
   height: 100px;
-  background-color: #FCF8F5;
+  background-color: #fcf8f5;
 }
 
 .header h1 {
@@ -18,6 +18,7 @@ body {
 }
 
 .main {
+  width: 90%;
   padding: 20px;
   box-sizing: border-box;
   max-width: 100%;
@@ -28,11 +29,11 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
   width: 80%;
-  background-color: #FCF8F5;
+  background-color: #fcf8f5;
 }
 
 .box {
-  background-color: #FCF8F5;
+  background-color: #fcf8f5;
   border-radius: 10px;
   box-sizing: border-box;
   padding: 20px;
@@ -41,7 +42,6 @@ body {
   align-items: none;
   position: relative;
 }
-
 .contents {
   align-items: center;
 }
@@ -91,29 +91,16 @@ button svg {
   margin-right: 8px;
 }
 
-
-@media (min-width: 1500px) {
-  .cart-container {
-    right: 20px; 
-    width: 200px;
-    z-index: 1000; 
-  }
-}
-@media (max-width: 1499px) {
-  .cart-container {
-    position: static; 
-    width: 100%; 
-    padding: 20px;
-    margin-top: 20px;
-  }
-}
-
 .cart-container {
-  position: sticky; 
   border-radius: 10px;
   background-color: white;
-  padding: 20px; 
-  z-index: 1000; 
+  padding: 50px;
+  position: sticky;
+  top: 20%;
+  right: 650%;
+  width: 200px;
+  height: 200px;
+  z-index: 1000;
 }
 
 .cart-wrapper {
@@ -121,7 +108,7 @@ button svg {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 60px;
+  gap: 20px; 
 }
 
 .cart-image-with-text {
@@ -129,4 +116,21 @@ button svg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.cart-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20%; 
+  height: 100%;
+  padding: 20px; 
+  background-color: #fcf8f5;
+  border-radius: 10px; 
+  z-index: 1000; 
+}
+
+@media (max-width: 768px) {
+  .cart-right {
+    display: none; 
+  }
 }
