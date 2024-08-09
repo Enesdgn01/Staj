@@ -97,9 +97,6 @@ button svg {
   padding: 50px;
   position: sticky;
   top: 20%;
-  right: 650%;
-  width: 200px;
-  height: 200px;
   z-index: 1000;
 }
 
