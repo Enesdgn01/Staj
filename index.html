@@ -1,39 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>sefik</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        text-align: center;
+        padding: 100px;
+        border: 2px solid #333;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .link-boxes {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .link-box {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+        border: 2px solid #333;
+        background-color: #fff;
+        color: #333;
+        font-size: 18px;
+        border-radius: 8px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .link-box:hover {
+        background-color: #333;
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
-    <div class="full-screen-image">
-      <div class="vertical-bar"></div>
-      <div class="vertical-bar2"></div>
-      <div class="horizontal-bar"></div>
-      <div class="horizontal-bar3"></div>
-      <div class="horizontal-bar2"></div>
-      <div class="circle">
-        <img src="image/diamond (2).png" alt="Diamond Icon" class="diamond-icon" />
+    <div class="container">
+      <h1>Linkler</h1>
+      <div class="link-boxes">
+        <a href="https://enesdgn01.github.io/Staj/Gear/" class="link-box"
+          >Gear</a
+        >
+        <a href="https://enesdgn01.github.io/Staj/HelloWorld" class="link-box"
+          >HelloWorld</a
+        >
+        <a href="https://enesdgn01.github.io/Staj/Radios" class="link-box"
+          >Radios</a
+        >
+        <a href="https://enesdgn01.github.io/Staj/Hit-Target" class="link-box"
+          >Hit-Target</a
+        >
+        <a
+          href="https://enesdgn01.github.io/Staj/Square-vs-Circle"
+          class="link-box"
+          >Square-vs-Circle</a
+        >
+        <a
+          href="https://enesdgn01.github.io/Staj/Breaking-News"
+          class="link-box"
+          >Breaking-News</a
+        >
+        <a
+          href="https://enesdgn01.github.io/Staj/ProductList"
+          class="link-box"
+          >Product-List</a
+        >
+        <a
+          href="https://enesdgn01.github.io/Staj/ProductListBoostrap"
+          class="link-box"
+          >Product-List-Boostrap</a
+        >
       </div>
-
-      <div class="header">Şefik Enes Doğan</div>
-      <div class="about-me">About Me</div>
-      <div class="projects-section">
-        <div class="projects-title">Yaptığım Tasarım ve Projeler</div>
-        <div class="link-boxes">
-          <a href="https://enesdgn01.github.io/Staj/Gear/" class="link-box">Gear</a>
-          <a href="https://enesdgn01.github.io/Staj/HelloWorld" class="link-box">HelloWorld</a>
-          <a href="https://enesdgn01.github.io/Staj/Radios" class="link-box">Radios</a>
-          <a href="https://enesdgn01.github.io/Staj/Hit-Target" class="link-box">Hit-Target</a>
-          <a href="https://enesdgn01.github.io/Staj/Square-vs-Circle" class="link-box">Square-vs-Circle</a>
-          <a href="https://enesdgn01.github.io/Staj/Breaking-News" class="link-box">Breaking-News</a>
-          <a href="https://enesdgn01.github.io/Staj/ProductList" class="link-box">Product-List</a>
-        </div>
-      </div>
-      <div class="content">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, explicabo.
-      </div>
-    
+    </div>
   </body>
 </html>
