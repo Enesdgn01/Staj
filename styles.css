@@ -1,8 +1,7 @@
 body {
   margin: 0;
-  background-color: #949fa7;
+  background-color: #ffffff;
   padding: 0;
-  color: white;
   transition: background-color 0.3s ease;
 }
 
@@ -10,9 +9,6 @@ body {
   min-height: 100vh;
   padding-bottom: 400px;
   position: relative;
-}
-.box:hover {
-    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .right,
@@ -38,6 +34,7 @@ body {
 
 .header {
   position: fixed;
+  font-family: 'Roboto', sans-serif;
   top: 0;
   left: 0;
   width: 100%;
@@ -46,7 +43,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #949fa7;
+  background-color: #ffffff;
   z-index: 1001;
 }
 
@@ -59,8 +56,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #949fa7;
+  background-color: #ffffff;
   margin-top: 0px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .footer {
@@ -71,7 +69,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #949fa7;
+  background-color: #ffffff;
   z-index: 1000;
   position: absolute;
   bottom: 0;
@@ -82,7 +80,7 @@ body {
 .diamond-icon {
   position: absolute;
   top: 25%;
-  right: 20%;
+  right: 1%;
   width: 50px;
   height: 50px;
   transform: none;
@@ -91,19 +89,20 @@ body {
 .diamond-icon2 {
   position: absolute;
   top: 25%;
-  left: 20%;
+  left: 1%;
   width: 50px;
   height: 50px;
   transform: none;
 }
 
 .box {
-  background-color: #949fa7;
+  background-color: #ffffff;
   border-radius: 10px;
   box-sizing: border-box;
   padding: 10px;
   display: flex;
   flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
   align-items: center;
   position: relative;
   width: 100%;
@@ -122,14 +121,22 @@ body {
   bottom: 1px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #f3f1f0;
-  color: #de1616;
+  background-color: #ffffff;
+  color: #050505;
   text-align: center;
   font-size: 16px;
   border-radius: 50px;
   width: 80%;
-  height: 8%;
+  height: 8%; 
+  transition: box-shadow 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
+
+.link-box:hover {
+  color: hsl(10, 5%, 75%); 
+  border-color: hsl(10, 5%, 75%);
+  box-shadow: none; 
+}
+
 h2 {
   text-align: center;
   color: black;
