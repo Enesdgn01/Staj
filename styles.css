@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
   margin: 0;
   background-color: #ffffff;
   padding: 0;
   transition: background-color 0.3s ease;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .main {
@@ -34,7 +40,8 @@ body {
 
 .header {
   position: fixed;
-  font-family: 'Roboto', sans-serif;
+  
+  font-family: "Poppins", sans-serif;
   top: 0px;
   left: 0;
   width: 100%;
@@ -50,6 +57,8 @@ body {
 .center {
   width: 100%;
   position: relative;
+  
+  font-family: "Poppins", sans-serif;
   height: 320px;
   color: white;
   display: flex;
@@ -58,7 +67,6 @@ body {
   justify-content: center;
   background-color: #ffffff;
   margin-top: 0px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .footer {
@@ -71,10 +79,12 @@ body {
   align-items: center;
   background-color: #ffffff;
   z-index: 1000;
+  
+  font-family: "Poppins", sans-serif;
   position: absolute;
   bottom: 0;
   z-index: 1001;
-  overflow-y: hidden; 
+  overflow-y: hidden;
 }
 
 .diamond-icon {
@@ -102,7 +112,6 @@ body {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  font-family: 'Open Sans', sans-serif;
   align-items: center;
   position: relative;
   width: 100%;
@@ -127,14 +136,14 @@ body {
   font-size: 16px;
   border-radius: 50px;
   width: 80%;
-  height: 8%; 
+  height: 8%;
   transition: box-shadow 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .link-box:hover {
-  color: hsl(10, 5%, 75%); 
+  color: hsl(10, 5%, 75%);
   border-color: hsl(10, 5%, 75%);
-  box-shadow: none; 
+  box-shadow: none;
 }
 
 h2 {
@@ -197,7 +206,7 @@ h2 {
   background-color: #000000;
   transform: translateX(-50%);
   position: absolute;
-  top: 210%;
+  top: 220%;
   left: 50%;
   z-index: 1001;
 }
