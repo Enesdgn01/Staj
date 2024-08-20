@@ -1,0 +1,255 @@
+* {
+  font-family: "Figtree", Helvetica, Arial, sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+ul {
+  list-style: none; 
+  padding-right: 0; 
+}
+
+ul li {
+  position: relative;
+  padding-right: 18px; 
+}
+
+ul li::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 16px; 
+  height: 16px; 
+  background-image: url('assets/chevron-down-regular-24.png'); /* Resmin URL'si */
+  background-size: contain; 
+  background-repeat: no-repeat; 
+}
+
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.link{
+  text-decoration: none;
+}
+
+.links-and-buttons,
+.links,
+.form-wrapper {
+  display: flex;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#name-error,
+#surname-error,
+#phone-error,
+#mail-error,
+#company-error,
+#password-error {
+  font-size: 12px;
+  color: #ff0000;
+}
+
+.name-active,
+.surname-active,
+.phone-active,
+.mail-active,
+.company-active,
+.password-active {
+  outline: 1px solid #ff0000 !important;
+}
+
+.header,
+.icons,
+.buttons,
+.form {
+  align-items: center;
+  display: flex;
+}
+
+form {
+  display: flex;
+}
+
+.header,
+.form-wrapper,
+form {
+  justify-content: center;
+}
+
+
+
+.header {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.logo-section img {
+  width: 140px;
+  height: 32px;
+}
+
+.links-and-buttons {
+  gap: 30px;
+}
+
+.links {
+  gap: 20px;
+}
+
+.links,
+.buttons,
+.icons {
+  gap: 20px;
+}
+
+.link {
+  color: black;
+  font-size: 13px;
+}
+
+.buttons button {
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.form-button {
+  width: 100%;
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-button:hover {
+  background-color: #c35002;
+}
+
+.try-free,
+.form-button {
+  background-color: #ff7d00;
+  color: #fff;
+}
+
+.try-free {
+  width: 150px;
+  height: 40px;
+}
+
+.call {
+  background-color: #fff;
+  width: 150px;
+  height: 40px;
+  color: #ff7d00;
+}
+
+.form-wrapper {
+  gap: 40px;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+.form-image {
+  width: 690px;
+  height: 580px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url(./assets/card-professional-packages.png);
+  background-color: #e8eaee;
+  border-radius: 10px;
+}
+
+.contact-form {
+  padding: 20px;
+}
+
+form {
+  flex-direction: column;
+  height: -webkit-fill-available;
+  gap: 40px;
+}
+
+.name-surname {
+  display: flex;
+  gap: 20px;
+}
+
+.company,
+.phone,
+.mail,
+.password {
+  width: 100%;
+}
+.company input,
+.phone input,
+.mail input,
+.password input {
+  width: -webkit-fill-available;
+}
+
+#name,
+#surname,
+#phone,
+#company,
+#password,
+#mail {
+  height: 47px;
+  border: none;
+  padding-left: 10px;
+  outline-color: #43b05b;
+  outline-width: 1px;
+  border-radius: 5px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .hamburger-menu {
+    display: block;
+  }
+  .links-and-buttons {
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-form {
+    padding: 0;
+  }
+  .form-image {
+    width: 630px;
+  }
+  .form-wrapper {
+    flex-direction: column-reverse;
+  }
+  .form,
+  form {
+    width: 100%;
+  }
+  .name-surname {
+    gap: 40px;
+    flex-direction: column;
+  }
+  .input-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .form-wrapper {
+    padding: 15px;
+  }
+}

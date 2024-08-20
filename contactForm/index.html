@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Contact Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <section class="header">
+      <div class="logo-section">
+        <img src="./assets/tsoft-logo-text.svg" alt="logo image" />
+      </div>
+      <div class="links-and-buttons">
+        <div>
+          <ul class="links">
+            <li><a class="link" href="">E-Ticaret Çözümleri</a></li>
+            <li><a class="link" href="">Ekosistem Çözümleri </a></li>
+            <li><a class="link" href="">E-İhracat Çözümleri </a></li>
+            <li><a class="link" href="">E-Ticaret Akademi </a></li>
+            <li><a class="link" href="">Kurumsal </a></li>
+          </ul>
+        </div>
+        <div class="icons">
+          <i class='bx bx-search' style="font-size: large;"></i>
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+          <i class='bx bx-phone' style="font-size: large;"></i>
+            
+          </svg>
+        </div>
+        <div class="buttons">
+          <button class="try-free">Ücretsiz Deneyin</button>
+          <button class="call">Sizi Arayalım</button>
+        </div>
+      </div>
+    </section>
+    <section class="contact-form">
+      <div class="form-wrapper">
+        <div class="form-image"></div>
+        <div class="form">
+          <form action="" onsubmit="checkCredentials(event)">
+            <div class="form-text">
+              Detaylı bilgi almak için <bold>formu doldurun</bold> size ulaşalım
+            </div>
+            <div class="name-surname">
+              <div class="input-group">
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Adınız*"
+                  onkeyup="checkName(this)"
+                />
+                <span id="name-error"></span>
+              </div>
+              <div class="input-group">
+                <input
+                  id="surname"
+                  type="text"
+                  placeholder="Soyadınız*"
+                  onkeyup="checkSurname(this)"
+                />
+                <span id="surname-error"></span>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="company">
+                <input
+                  id="company"
+                  type="text"
+                  placeholder="İşyeri,Şirket Adı"
+                  onkeyup="checkCompany(this)"
+                />
+                <span id="company-error"></span>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="phone">
+                <input
+                  id="phone"
+                  type="tel"
+                  placeholder="Telefon Numarası*"
+                  onkeyup="checkPhone(this)"
+                />
+                <span id="phone-error"></span>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="mail">
+                <input
+                  id="mail"
+                  type="text"
+                  placeholder="E-Posta*"
+                  onkeyup="checkMail(this)"
+                />
+                <span id="mail-error"></span>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="password">
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Şifre*"
+                  onkeyup="checkPassword(this)"
+                />
+                <span id="password-error"></span>
+              </div>
+            </div>
+            <input type="submit" value="Bilgi Al" class="form-button" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
