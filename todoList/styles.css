@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(/assets/1346366.png);
+  background: linear-gradient(to top, #360033, #0b8793);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
