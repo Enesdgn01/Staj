@@ -50,16 +50,16 @@ h1 {
   right: 15px;
 }
 .box.active {
-  background-color: #f0f8ff; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #f0f8ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .box.active .toggle {
-  color: blue; 
+  color: blue;
 }
 .box.active::before,
 .box.active::after {
-  content: '\f075';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
   color: #2ecc71;
   font-size: 7rem;
   position: absolute;
@@ -75,8 +75,3 @@ h1 {
   left: -30px;
   transform: rotateY(180deg);
 }
-
-
-
-
-
