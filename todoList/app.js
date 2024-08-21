@@ -92,9 +92,9 @@ function deleteCheck(e) {
     const todo = item.parentElement;
     const todoText = todo.querySelector(".todo-item");
     
-    todoInput.value = todoText.innerText; // Eski değeri input'a aktar
-    todo.remove(); // Eski elemanı listeden kaldır
-    removeLocalStorage(todo); // LocalStorage'dan da kaldır
+    todoInput.value = todoText.innerText; 
+    todo.remove(); 
+    removeLocalStorage(todo); 
   }
 }
 
