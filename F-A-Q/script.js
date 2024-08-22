@@ -20,3 +20,22 @@ document.querySelectorAll(".toggle").forEach((button) => {
     }
   });
 });
+document.querySelectorAll(".title").forEach((button) => {
+
+  button.addEventListener("click", () => {
+    const box = button.parentElement;
+    const text = box.querySelector(".text");
+
+    const isActive = box.classList.contains("active");
+
+    if (isActive) {
+      // FAQ aktif ise
+      box.classList.remove("active");
+      text.style.display = "none";
+    } else {
+      // FAQ aktif değilse
+      box.classList.add("active");
+      text.style.display = "block";
+    }
+  });
+});
