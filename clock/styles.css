@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+
+.toggle {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+html.dark {
+  color: black;
+  background-color: white;
+}
+
+html.dark {
+  background-color: black;
+  color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.clock {
+  background-image: url(assets/saat02.jpg);
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+.clock .hour,
+.clock .min,
+.clock .sec {
+  position: absolute;
+}
+.time {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center; 
+  align-items: end; 
+  font-family: 'Courier New', Courier, monospace;
+}
+.date {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center; 
+  font-family: 'Courier New', Courier, monospace;
+}
+.hr,
+.mn,
+.sc {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 1s ease-in;
+}
+.hr::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 70px;
+  background: black;
+  z-index: 10;
+  border-radius: 6px 6px 60px 60px;
+}
+.mn::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100px;
+  background: black;
+  z-index: 11;
+  border-radius: 6px 6px 60px 60px;
+}
+.sc::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 140px;
+  background: red;
+  z-index: 11;
+  border-radius: 6px 6px 60px 60px;
+}
+.circle {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgb(0, 0, 0);
+  border: 2px solid red;
+  z-index: 10;
+  border-radius: 50%;
+}
+html.dark .hr::before  {
+  background: white; 
+}
+
+html.dark .mn::before {
+  background: white; 
+}
+html.dark .circle{
+  background: white;
+}
+html.dark .clock {
+  background-image: url(assets/imageedit_4_4142792310.jpg); 
+}
+html.dark .time {
+  color: white; 
+}
+html.dark .date {
+  color: white; 
+}
+
