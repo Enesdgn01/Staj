@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.main {
+  height: 530px;
+  width: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+}
+
+.image{
+  position: absolute;
+  width: min-content;
+  height: 500px;
+  display: flex;
+}
+img {
+  width: 500px;
+  object-fit: cover;
+}
+button {
+  cursor: pointer;
+  color: white;
+  position: absolute;
+}
+.button-one{
+  width: calc(50% - 4px); 
+  height: 30px;
+  background-color: #663399;
+}
+.button-two{
+  width: calc(50% - 4px);
+  right: 0; 
+  height: 30px;
+  background-color: #663399;
+}
