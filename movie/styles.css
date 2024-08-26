@@ -37,20 +37,37 @@ body {
     border: 2px solid #22254B;
 }
 .main {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 20px; 
+  justify-content: start; 
   background-color: #22254b;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  align-items: start;
   width: 100%;
-  margin: 0 -100px 0 0px;
+  padding: 10px; 
+  box-sizing: border-box; 
+}
+
+@media only screen and (max-width: 1200px) {
+  .main {
+    grid-template-columns: repeat(3, 1fr); /* 3 sütun */
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr); /* 2 sütun */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    grid-template-columns: 1fr; /* Tek sütun */
+  }
 }
 .m-container {
-  display: flex;
   flex-direction: column;
-  width: 325px;
+  width: 330px;
   height: 600px;
   display: grid;
   grid-template-rows: 80% 20%;
@@ -58,8 +75,22 @@ body {
   overflow: hidden;
   padding: 15px;
 }
+.overview {
+  text-align: left;
+  padding: 20px 40px;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  right: 0;
+  height: min-content;
+  transition: 0.2s all ease-in;
+  transform: translateY(101%);
+  width: 69%;
+}
 .m-container:hover .overview{
-  transform:translateY(0)
+  transform:translateY(-4%)
 }
 .m-image img {
   width: 100%; 
@@ -90,18 +121,4 @@ body {
   background-color: #22254B;
   margin: 40px 25px 40px 20px;
   border-radius: 5px;
-}
-.overview {
-  text-align: left;
-  padding: 20px 40px;
-  flex-direction: column;
-  background-color: #fff;
-  position: absolute;
-  left: 15px;
-  bottom: 0;
-  right: 0;
-  height: min-content;
-  transition: 0.2s all ease-in;
-  transform: translateY(101%);
-  width: 69%;
 }
