@@ -45,11 +45,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  margin: 0 -100px 0 0px;
 }
 .m-container {
   display: flex;
   flex-direction: column;
-  width: 330px;
+  width: 325px;
   height: 600px;
   display: grid;
   grid-template-rows: 80% 20%;
@@ -96,10 +97,11 @@ body {
   flex-direction: column;
   background-color: #fff;
   position: absolute;
-  left: 0;
+  left: 15px;
   bottom: 0;
   right: 0;
   height: min-content;
   transition: 0.2s all ease-in;
   transform: translateY(101%);
+  width: 69%;
 }
