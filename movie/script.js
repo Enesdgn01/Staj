@@ -23,7 +23,7 @@ async function getAPI() {
         output += `
         <div class="m-container">
           <div class="m-image">
-            <img src="${IMG_PATH + item.poster_path}" alt="${item.title}">
+            <img style="object-fit:cover;" src="${IMG_PATH + item.poster_path}" alt="${item.title}">
           </div>
           <div class="m-content">
             <div class="m-name">${item.title}</div>
