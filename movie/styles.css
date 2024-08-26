@@ -38,8 +38,8 @@ body {
 }
 .main {
   display: grid;
+  grid-gap: 30px;
   grid-template-columns: repeat(4, 1fr); 
-  grid-gap: 20px; 
   justify-content: start; 
   background-color: #22254b;
   align-items: start;
@@ -47,33 +47,13 @@ body {
   padding: 10px; 
   box-sizing: border-box; 
 }
-
-@media only screen and (max-width: 1200px) {
-  .main {
-    grid-template-columns: repeat(3, 1fr); 
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .main {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .main {
-    grid-template-columns: 1fr; 
-  }
-}
 .m-container {
   flex-direction: column;
-  width: 330px;
   height: 600px;
   display: grid;
   grid-template-rows: 80% 20%;
   position: relative;
   overflow: hidden;
-  padding: 15px;
 }
 .overview {
   text-align: left;
@@ -81,13 +61,14 @@ body {
   flex-direction: column;
   background-color: #fff;
   position: absolute;
-  left: 15px;
+  max-width: 100%;
+  left: 0;
   bottom: 0;
   right: 0;
   height: min-content;
   transition: 0.2s all ease-in;
-  transform: translateY(101%);
-  width: 69%;
+  transform: translateY(100%);
+  margin:-30px;
 }
 .m-container:hover .overview{
   transform:translateY(-4%)
@@ -121,4 +102,21 @@ body {
   background-color: #22254B;
   margin: 40px 25px 40px 20px;
   border-radius: 5px;
+}
+@media only screen and (max-width: 1200px) {
+  .main {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    grid-template-columns: 1fr; 
+  }
 }
