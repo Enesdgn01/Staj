@@ -41,8 +41,6 @@ body {
   display: flex;
   justify-content: center;
   background-color: #22254b;
-  gap: 20px;
-  padding: 20px;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -51,14 +49,13 @@ body {
 .m-container {
   display: flex;
   flex-direction: column;
-  background-color: #373B69;
   width: 330px;
   height: 600px;
   display: grid;
   grid-template-rows: 80% 20%;
-  border-radius: 5px;
   position: relative;
   overflow: hidden;
+  padding: 15px;
 }
 .m-container:hover .overview{
   transform:translateY(0)
@@ -71,6 +68,7 @@ body {
 .m-content {
   display: grid;
   grid-template-columns: 70% 30%;
+  background-color: #373B69;
 }
 .m-name {
   display: flex;
