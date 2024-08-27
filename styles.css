@@ -5,17 +5,18 @@
 body {
   display: flex;
   justify-content: center;
+  background-repeat: no-repeat;
   align-items: center;
   flex-direction: column;
   margin: 0;
   background-color: black;
   overflow-x: hidden;
 }
-#myGif {
-  width: 100%; 
-  height: 100%; 
-  image-rendering: optimizeQuality; 
+video {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  background-repeat: round;
 }
 .portfolio {
   height: 950px;
