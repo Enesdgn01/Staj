@@ -31,7 +31,7 @@ h2 {
   margin: 20px 0;
 }
 #s {
-  font-size: 150px;
+  font-size: 100px;
   font-family: "Qwitcher Grypen";
   position: absolute;
   top: -20%;
@@ -42,7 +42,7 @@ h2 {
   transform: translateY(100%);
 }
 #e {
-  font-size: 150px;
+  font-size: 100px;
   font-family: "Qwitcher Grypen";
   position: absolute;
   top: 0;
@@ -53,11 +53,11 @@ h2 {
   transform: translateY(100%);
 }
 #d {
-  font-size: 150px;
+  font-size: 100px;
   font-family: "Qwitcher Grypen";
   position: absolute;
   top: 20%;
-  left: 50%;
+  left: 40%;
   text-align: center;
   color: white;
   transition: 0.5s all ease-in;
@@ -68,7 +68,7 @@ h2 {
   font-family: "Dancing Script";
   position: absolute;
   top: 60%;
-  left: 70%;
+  left: 50%;
   text-align: center;
   color: white;
   transition: 0.5s all ease-in;
@@ -78,7 +78,7 @@ h2 {
   height: 100vh;
 }
 .skills {
-  width: 100%;
+  width: 100vw;
   position: relative;
 }
 .skills h3 {
@@ -180,5 +180,22 @@ a {
   object-fit: cover;
   text-decoration: none;
   color: white;
+}
+@media (max-width: 768px) {
+  .projects {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+  }
+  .ab-pr{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+  }
+.footer {
+  height: 200vh;
+}
+
 }
   
