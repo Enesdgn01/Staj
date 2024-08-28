@@ -61,7 +61,7 @@ setInterval(updateTime, 1000);
 
 function increaseScore() {
     score++;
-    if (score > 9) {
+    if (score > 19) {
         message.style.opacity = '1';
     }
     scoreEl.innerHTML = `Score: ${score}`;
@@ -92,7 +92,8 @@ function createInsect() {
 }
 
 function catchInsect() {
-    setInterval(createInsect, 2000);
+    setTimeout(createInsect, 1000)
+    setTimeout(createInsect, 1000)
     this.style.display = 'none';
     increaseScore();
 }
