@@ -47,3 +47,9 @@ function resetInterval() {
     clearInterval(interval);
     interval = setInterval(run, 6000);
 }
+document.getElementById("scroll").addEventListener("click", function() {
+    window.scrollBy({
+        top: window.innerHeight,
+        behavior: "smooth"
+    });
+});
