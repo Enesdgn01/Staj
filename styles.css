@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+.header{
+  height: 10vh;
+  width: 100vw;
+}
 
 body {
   display: flex;
@@ -32,14 +36,13 @@ h2 {
 .fa-arrow-down {
   font-size: 3rem;
   position: absolute;
-  bottom: 10%;
-  left: 8%;
+  top: 0;
+  right: 8%;
 }
 
 .scroll {
   position: absolute;
-  bottom: 10%;
-  left: 10%;
+  right: 10%;
   font-family: 'Poppins';
   background-color: transparent; 
   color: black; 
@@ -103,7 +106,7 @@ h2 {
   transform: translateY(100%);
 }
 .skill-project {
-  height: 100vh;
+  height: 90vh;
 }
 .skills {
   width: 100vw;
@@ -112,7 +115,7 @@ h2 {
 .skills h3 {
   color: black;
   text-align: center;
-  margin-top: 0;
+  margin-top: -5%;
   font-family: "Poppins";
   font-size: 30px;
 }
@@ -182,7 +185,7 @@ img {
 
 }
 .footer {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   position: relative;
   display: grid;
