@@ -97,15 +97,4 @@ function catchInsect() {
     this.style.display = 'none';
     increaseScore();
 }
-document.querySelectorAll('.insect').forEach(function (insect) {
-    insect.addEventListener('mouseover', function () {
-        this.style.backgroundColor = '';
-        this.style.color = '';
-    });
-
-    insect.addEventListener('mouseout', function () {
-        this.style.backgroundColor = 'transparent'; // Varsayılan arka plan rengini geri getir
-        this.style.color = 'white'; // Varsayılan renk geri getir
-    });
-});
 
