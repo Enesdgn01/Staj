@@ -92,8 +92,8 @@ function createInsect() {
 }
 
 function catchInsect() {
-    setTimeout(createInsect, 1000)
-    setTimeout(createInsect, 1000)
+    setTimeout(createInsect, 500)
+    setTimeout(createInsect, 500)
     this.style.display = 'none';
     increaseScore();
 }
