@@ -29,17 +29,6 @@ h2 {
   color: white;
   margin: 20px 0;
 }
-#s {
-  font-size: 100px;
-  font-family: "Qwitcher Grypen";
-  position: absolute;
-  top: -20%;
-  left: 10%;
-  text-align: center;
-  color: black; 
-  transition: 0.5s all ease-in;
-  transform: translateY(100%);
-}
 .fa-arrow-down {
   font-size: 3rem;
   position: absolute;
@@ -68,23 +57,35 @@ h2 {
 .scroll:hover {
   opacity: 0.9; /* Üzerine gelindiğinde opaklık */
 }
-#e {
-  font-size: 100px;
+
+#s {
+  font-size: 150px;
   font-family: "Qwitcher Grypen";
   position: absolute;
-  top: 0;
-  left: 30%;
+  top: -10%;
+  left: 10%;
+  text-align: center;
+  color: black; 
+  transition: 0.5s all ease-in;
+  transform: translateY(100%);
+}
+#e {
+  font-size: 150px;
+  font-family: "Qwitcher Grypen";
+  position: absolute;
+  top: 10%;
+  left: 40%;
   text-align: center;
   color: black; 
   transition: 0.5s all ease-in;
   transform: translateY(100%);
 }
 #d {
-  font-size: 100px;
+  font-size: 150px;
   font-family: "Qwitcher Grypen";
   position: absolute;
-  top: 20%;
-  left: 40%;
+  top: 30%;
+  left: 70%;
   text-align: center;
   color: black; 
   transition: 0.5s all ease-in;
@@ -224,29 +225,5 @@ a {
   height: 200vh;
 }
 }
-.diagonal-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50vw;
-  height: 50vh;
-  background: linear-gradient(to bottom right, transparent calc(50% - 5px), black calc(50% - 5px), black calc(50% + 5px), transparent calc(50% + 5px));
-}
-.diagonal-line3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80vw;
-  height: 80vh;
-  background: linear-gradient(to bottom right, transparent calc(50% - 5px), black calc(50% - 5px), black calc(50% + 5px), transparent calc(50% + 5px));
-}
-.diagonal-line2 {
-  position: absolute;
-  top: 60%; /* Yatay olarak ortalamak için */
-  left: 20%;
-  width: 100%;
-  height: 0.5rem;
-  background-color: black; 
-  transform: translateY(-50%);
-}
+
   

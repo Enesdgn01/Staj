@@ -1,0 +1,89 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #516DFF;
+    color: white;
+    overflow-y: hidden;
+}
+.screen{
+    height: 100vh;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.btn{
+    font-family: 'Press Start 2P', cursive;
+    background-color: white;
+    color: #516DFF;
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    border: none;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+.screen-two{
+    height: 100vh;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+}
+.insect{
+    font-family: 'Press Start 2P', cursive;
+    width: 9rem;
+    height: 9rem;
+    margin-top: 1rem;
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: grab;
+    gap: 1rem;
+    object-fit: cover;
+    color: white;
+}
+.insect img {
+    width: 7rem; 
+    height: 7rem;
+}
+
+.game{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.time,
+.score {
+  position: absolute;
+  top: 1rem;
+}
+.time {
+  left: 1rem;
+}
+
+.score {
+    top: 3rem;
+  right: 1rem;
+}
+.message {
+    line-height: 1.7;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s ease-in;
+}
+
+
+
