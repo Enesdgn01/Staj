@@ -1,0 +1,118 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin: 0;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #CDB08E;
+}
+
+.box {
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    perspective: 800px; 
+}
+
+.box::before,
+.box::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    transform-origin: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.box::before {
+    background-color: #BEEEEE;
+    width: 258px;
+    height: 248px;
+    transform: rotateX(45deg);
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) rotateX(45deg);
+    z-index: 2;
+}
+
+.box::after {
+    background-color: #BEEEEE;
+    width: 265px;
+    height: 193px;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%) rotateX(-45deg);
+    z-index: 4;
+}
+
+.text, .text2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 40px;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.text {
+    top: 27%;
+    transform: translate(-50%, -50%) rotateX(45deg);
+    z-index: 9;
+}
+
+.text2 {
+    top: 88%;
+    transform: translate(-50%, -50%) rotateX(-45deg);
+    z-index: 7;
+}
+
+.text span, .text2 span {
+    display: block;
+    animation: scroll 0.4s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.bar {
+    position: absolute;
+    top: -17%;
+    width: 100%; /* Çubuğun genişliği */
+    height: 250px; /* Çubuğun yüksekliği */
+    background-color: #CDB08E; /* Çubuğun rengi */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    z-index: 10;
+}
+
+.bar2 {
+    position: absolute;
+    top: 82%;
+    width: 100%; /* Çubuğun genişliği */
+    height: 100px; /* Çubuğun yüksekliği */
+    background-color: #CDB08E; /* Çubuğun rengi */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    z-index: 10;
+}
